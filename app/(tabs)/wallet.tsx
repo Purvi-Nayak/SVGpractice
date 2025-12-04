@@ -30,7 +30,7 @@ import Svg, {
 
 const { width, height } = Dimensions.get("window");
 
-export default function WalletScreen() {
+const WalletScreen = () => {
   // Animation values
   const fadeIn = useSharedValue(0);
   const cardSlide = useSharedValue(-width);
@@ -471,7 +471,9 @@ export default function WalletScreen() {
       </Animated.View>
     </View>
   );
-}
+};
+
+export default WalletScreen;
 
 const styles = StyleSheet.create({
   container: {

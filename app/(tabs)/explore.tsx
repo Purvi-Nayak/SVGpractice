@@ -1,3 +1,4 @@
+//This is Home Screen with Profile UI using SVG and Animations
 import React, { useEffect } from "react";
 import {
   Dimensions,
@@ -28,7 +29,7 @@ import Svg, {
 
 const { width, height } = Dimensions.get("window");
 
-export default function ProfileScreen() {
+const ProfileScreen = () => {
   // Animation values
   const fadeIn = useSharedValue(0);
   const slideUp = useSharedValue(50);
@@ -288,7 +289,9 @@ export default function ProfileScreen() {
       </Animated.View>
     </View>
   );
-}
+};
+
+export default ProfileScreen;
 
 const styles = StyleSheet.create({
   container: {

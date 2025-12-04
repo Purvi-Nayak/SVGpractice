@@ -21,7 +21,7 @@ import Svg, {
 
 const { width, height } = Dimensions.get("window");
 
-export default function AnalyticsScreen() {
+const AnalyticsScreen = () => {
   // Animation values
   const fadeIn = useSharedValue(0);
   const slideUp = useSharedValue(100);
@@ -327,7 +327,9 @@ export default function AnalyticsScreen() {
       </Animated.View>
     </View>
   );
-}
+};
+
+export default AnalyticsScreen;
 
 const styles = StyleSheet.create({
   container: {

@@ -27,7 +27,7 @@ import Svg, {
 
 const { width, height } = Dimensions.get("window");
 
-export default function ModernDashboard() {
+const ModernDashboard = () => {
   // Animation values
   const scale = useSharedValue(0);
   const opacity = useSharedValue(0);
@@ -366,7 +366,9 @@ export default function ModernDashboard() {
       </Animated.View>
     </View>
   );
-}
+};
+
+export default ModernDashboard;
 
 const styles = StyleSheet.create({
   container: {
